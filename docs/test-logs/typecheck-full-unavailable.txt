@@ -1,0 +1,5 @@
+client/src/App.tsx(1,43): error TS7016: Could not find a declaration file for module 'react'. '/opt/npm-tools/node_modules/react/index.js' implicitly has an 'any' type.
+  Try `npm i --save-dev @types/react` if it exists or add a new declaration (.d.ts) file containing `declare module 'react';`
+client/src/App.tsx(22,15): error TS7016: Could not find a declaration file for module 'react/jsx-runtime'. '/opt/npm-tools/node_modules/react/jsx-runtime.js' implicitly has an 'any' type.
+  Try `npm i --save-dev @types/react` if it exists or add a new declaration (.d.ts) file containing `declare module 'react/jsx-runtime';`
+client/src/App.tsx(62,24): error TS7026: JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.

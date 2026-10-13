@@ -1,0 +1,6 @@
+# Aurelia Hotels is a fictional demonstration site.
+User-agent: *
+Disallow: /admin
+Disallow: /account
+Disallow: /checkout
+Disallow: /api/

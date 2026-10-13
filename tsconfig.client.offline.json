@@ -1,0 +1,9 @@
+{
+  "extends": "./tsconfig.client.json",
+  "compilerOptions": {
+    "jsx": "preserve",
+    "noUnusedLocals": true
+  },
+  "include": ["client/src/**/*.ts", "client/src/**/*.tsx", "shared/**/*.ts", "client/types-offline/*.d.ts"],
+  "exclude": ["shared/**/*.test.ts"]
+}

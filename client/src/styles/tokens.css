@@ -1,0 +1,64 @@
+/* Aurelia design tokens */
+:root {
+  /* Palette */
+  --ivory: #FAF9F6;
+  --paper: #FFFFFF;
+  --stone: #E9E7E2;
+  --stone-soft: #F2F0EB;
+  --line: #DDD8CE;
+  --line-strong: #C9C2B4;
+  --forest: #173B32;
+  --forest-deep: #0F2A23;
+  --forest-tint: #E4ECE8;
+  --navy: #17212B;
+  --gold: #C5A46D;
+  --gold-deep: #8A6A35;      /* gold for text on light backgrounds (AA contrast) */
+  --gold-tint: #F4ECDD;
+  --ink: #343A40;
+  --ink-strong: #1E2328;
+  --muted: #646A70;
+  --ok: #2F6B4F;
+  --ok-tint: #E3EFE8;
+  --warn: #8A5A12;
+  --warn-tint: #FAF0DC;
+  --bad: #9B2F2F;
+  --bad-tint: #F7E4E2;
+  --info: #2C4B66;
+  --info-tint: #E5EDF4;
+
+  /* Type */
+  --font-display: 'Cormorant Garamond', 'Cormorant', Georgia, 'Times New Roman', serif;
+  --font-body: 'Manrope', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  --fs-xs: 0.75rem;
+  --fs-sm: 0.875rem;
+  --fs-base: 1rem;
+  --fs-md: 1.125rem;
+  --fs-lg: 1.375rem;
+  --fs-xl: clamp(1.75rem, 1.2rem + 2vw, 2.5rem);
+  --fs-2xl: clamp(2.25rem, 1.4rem + 3.2vw, 3.6rem);
+  --fs-hero: clamp(2.6rem, 1.4rem + 4.6vw, 5rem);
+
+  /* Space & shape */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4.5rem;
+  --space-9: 6.5rem;
+  --radius-sm: 2px;
+  --radius: 4px;
+  --radius-lg: 8px;
+  --container: 1240px;
+  --gutter: clamp(1rem, 0.5rem + 2.5vw, 2.5rem);
+  --header-h: 76px;
+
+  /* Depth & motion */
+  --shadow-sm: 0 1px 2px rgba(23, 33, 43, 0.06);
+  --shadow: 0 8px 24px -12px rgba(23, 33, 43, 0.18), 0 2px 6px rgba(23, 33, 43, 0.05);
+  --shadow-lg: 0 24px 60px -24px rgba(23, 33, 43, 0.35);
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --dur: 220ms;
+}

@@ -1,0 +1,9 @@
+node_modules/
+client/dist/
+server/dist/
+data/*.db
+data/*.db-*
+.env
+*.log
+assets/source/
+demo-dist/

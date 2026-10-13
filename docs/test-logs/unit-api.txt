@@ -1,0 +1,283 @@
+
+> aurelia-hotels@0.1.0 test
+> node --disable-warning=ExperimentalWarning --import tsx --test shared/*.test.ts server/test/*.test.ts
+
+TAP version 13
+# Subtest: catalogue & search
+    # Subtest: home data loads: destinations and hotels
+    ok 1 - home data loads: destinations and hotels
+      ---
+      duration_ms: 20.407861
+      type: 'test'
+      ...
+    # Subtest: filters change results
+    ok 2 - filters change results
+      ---
+      duration_ms: 21.345705
+      type: 'test'
+      ...
+    # Subtest: sort by price ascending and by rating
+    ok 3 - sort by price ascending and by rating
+      ---
+      duration_ms: 8.253392
+      type: 'test'
+      ...
+    # Subtest: invalid dates are rejected by the server
+    ok 4 - invalid dates are rejected by the server
+      ---
+      duration_ms: 8.769747
+      type: 'test'
+      ...
+    # Subtest: hotel detail loads with date-specific availability (seeded sell-out)
+    ok 5 - hotel detail loads with date-specific availability (seeded sell-out)
+      ---
+      duration_ms: 15.129266
+      type: 'test'
+      ...
+    # Subtest: inventory override (maintenance) closes a room type for those nights
+    ok 6 - inventory override (maintenance) closes a room type for those nights
+      ---
+      duration_ms: 2.550747
+      type: 'test'
+      ...
+    # Subtest: server quote equals the shared pricing engine
+    ok 7 - server quote equals the shared pricing engine
+      ---
+      duration_ms: 6.135002
+      type: 'test'
+      ...
+    # Subtest: occupancy limits are enforced
+    ok 8 - occupancy limits are enforced
+      ---
+      duration_ms: 4.594467
+      type: 'test'
+      ...
+    1..8
+ok 1 - catalogue & search
+  ---
+  duration_ms: 260.784732
+  type: 'suite'
+  ...
+# Subtest: booking flow
+    # Subtest: booking requires sign-in
+    ok 1 - booking requires sign-in
+      ---
+      duration_ms: 6.505174
+      type: 'test'
+      ...
+    # Subtest: successful reservation persists, with honest test-mode payment state
+    ok 2 - successful reservation persists, with honest test-mode payment state
+      ---
+      duration_ms: 46.616382
+      type: 'test'
+      ...
+    # Subtest: tampered price is refused and nothing is saved
+    ok 3 - tampered price is refused and nothing is saved
+      ---
+      duration_ms: 37.14315
+      type: 'test'
+      ...
+    # Subtest: terms must be accepted and guest details validated
+    ok 4 - terms must be accepted and guest details validated
+      ---
+      duration_ms: 42.173587
+      type: 'test'
+      ...
+    # Subtest: duplicate submission with the same idempotency key returns the same reservation
+    ok 5 - duplicate submission with the same idempotency key returns the same reservation
+      ---
+      duration_ms: 41.256681
+      type: 'test'
+      ...
+    # Subtest: overlapping booking of fully-booked inventory is rejected; adjacent stay is allowed
+    ok 6 - overlapping booking of fully-booked inventory is rejected; adjacent stay is allowed
+      ---
+      duration_ms: 45.117361
+      type: 'test'
+      ...
+    # Subtest: concurrent requests never oversell the last rooms
+    ok 7 - concurrent requests never oversell the last rooms
+      ---
+      duration_ms: 189.557967
+      type: 'test'
+      ...
+    # Subtest: multi-room request needs that many units on every night
+    ok 8 - multi-room request needs that many units on every night
+      ---
+      duration_ms: 42.900384
+      type: 'test'
+      ...
+    # Subtest: guests cannot read other guests’ reservations
+    ok 9 - guests cannot read other guests’ reservations
+      ---
+      duration_ms: 77.680488
+      type: 'test'
+      ...
+    1..9
+ok 2 - booking flow
+  ---
+  duration_ms: 529.474073
+  type: 'suite'
+  ...
+# Subtest: cancellation & admin
+    # Subtest: anonymous and guest users cannot reach admin APIs
+    ok 1 - anonymous and guest users cannot reach admin APIs
+      ---
+      duration_ms: 83.741061
+      type: 'test'
+      ...
+    # Subtest: cancellation request → admin approval → inventory released
+    ok 2 - cancellation request → admin approval → inventory released
+      ---
+      duration_ms: 83.353852
+      type: 'test'
+      ...
+    # Subtest: status transitions follow the allowed state machine
+    ok 3 - status transitions follow the allowed state machine
+      ---
+      duration_ms: 45.466382
+      type: 'test'
+      ...
+    # Subtest: admin cannot reduce inventory below existing reservations; can update price
+    ok 4 - admin cannot reduce inventory below existing reservations; can update price
+      ---
+      duration_ms: 41.747096
+      type: 'test'
+      ...
+    # Subtest: admin customer view does not expose password hashes
+    ok 5 - admin customer view does not expose password hashes
+      ---
+      duration_ms: 36.951322
+      type: 'test'
+      ...
+    1..5
+ok 3 - cancellation & admin
+  ---
+  duration_ms: 291.565784
+  type: 'suite'
+  ...
+# Subtest: auth & security
+    # Subtest: passwords are hashed, wrong password rejected, logout ends session
+    ok 1 - passwords are hashed, wrong password rejected, logout ends session
+      ---
+      duration_ms: 147.914067
+      type: 'test'
+      ...
+    # Subtest: password reset (demo link) works once and revokes old password
+    ok 2 - password reset (demo link) works once and revokes old password
+      ---
+      duration_ms: 174.147616
+      type: 'test'
+      ...
+    # Subtest: mutations without the client header are blocked (CSRF)
+    ok 3 - mutations without the client header are blocked (CSRF)
+      ---
+      duration_ms: 2.344495
+      type: 'test'
+      ...
+    # Subtest: contact form: server validation and honest delivery message
+    ok 4 - contact form: server validation and honest delivery message
+      ---
+      duration_ms: 2.758066
+      type: 'test'
+      ...
+    # Subtest: security headers are present
+    ok 5 - security headers are present
+      ---
+      duration_ms: 0.945707
+      type: 'test'
+      ...
+    1..5
+ok 4 - auth & security
+  ---
+  duration_ms: 328.394225
+  type: 'suite'
+  ...
+# Subtest: rate limiting
+    # Subtest: login attempts are throttled
+    ok 1 - login attempts are throttled
+      ---
+      duration_ms: 265.537904
+      type: 'test'
+      ...
+    1..1
+ok 5 - rate limiting
+  ---
+  duration_ms: 265.746127
+  type: 'suite'
+  ...
+# Subtest: with a provider configured, a booking is held as pending — never marked paid by the server itself
+ok 6 - with a provider configured, a booking is held as pending — never marked paid by the server itself
+  ---
+  duration_ms: 249.951543
+  type: 'test'
+  ...
+# Subtest: stale signatures are rejected
+ok 7 - stale signatures are rejected
+  ---
+  duration_ms: 0.357805
+  type: 'test'
+  ...
+# Subtest: payment events with a mismatched amount do not mark a reservation paid
+ok 8 - payment events with a mismatched amount do not mark a reservation paid
+  ---
+  duration_ms: 53.388943
+  type: 'test'
+  ...
+# Subtest: dates: nights and stay nights are check-out exclusive
+ok 9 - dates: nights and stay nights are check-out exclusive
+  ---
+  duration_ms: 3.561241
+  type: 'test'
+  ...
+# Subtest: validation: check-out must be after check-in
+ok 10 - validation: check-out must be after check-in
+  ---
+  duration_ms: 0.230042
+  type: 'test'
+  ...
+# Subtest: validation: past dates, minimum guests and rooms
+ok 11 - validation: past dates, minimum guests and rooms
+  ---
+  duration_ms: 0.163281
+  type: 'test'
+  ...
+# Subtest: validation: stay length cap
+ok 12 - validation: stay length cap
+  ---
+  duration_ms: 0.128421
+  type: 'test'
+  ...
+# Subtest: occupancy: party must fit across requested rooms
+ok 13 - occupancy: party must fit across requested rooms
+  ---
+  duration_ms: 0.115915
+  type: 'test'
+  ...
+# Subtest: pricing: base quote with demo tax and fee, no offer
+ok 14 - pricing: base quote with demo tax and fee, no offer
+  ---
+  duration_ms: 0.180447
+  type: 'test'
+  ...
+# Subtest: pricing: extended stay offer (15%) beats plan-ahead (10%), never stacks
+ok 15 - pricing: extended stay offer (15%) beats plan-ahead (10%), never stacks
+  ---
+  duration_ms: 0.146056
+  type: 'test'
+  ...
+# Subtest: pricing: plan-ahead applies at 60+ days only
+ok 16 - pricing: plan-ahead applies at 60+ days only
+  ---
+  duration_ms: 0.063423
+  type: 'test'
+  ...
+1..16
+# tests 39
+# suites 5
+# pass 39
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 2745.122595

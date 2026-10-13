@@ -1,0 +1,42 @@
+{
+  "name": "aurelia-hotels",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Aurelia Hotels — premium hotel website and booking platform (fictional demonstration brand).",
+  "type": "module",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "build": "npm run build:client && npm run build:server",
+    "build:client": "node scripts/build-client.mjs",
+    "build:demo": "node scripts/build-demo.mjs",
+    "build:server": "tsc -p tsconfig.server.json",
+    "start": "node --disable-warning=ExperimentalWarning server/dist/server/src/index.js",
+    "images": "node scripts/process-images.mjs",
+    "db:migrate": "tsx server/src/db/cli.ts migrate",
+    "db:seed": "tsx server/src/db/cli.ts seed",
+    "db:reset": "tsx server/src/db/cli.ts reset",
+    "typecheck": "tsc -p tsconfig.server.json --noEmit && tsc -p tsconfig.client.json --noEmit",
+    "typecheck:offline": "tsc -p tsconfig.server.json --noEmit && tsc -p tsconfig.client.offline.json --noEmit",
+    "test": "node --disable-warning=ExperimentalWarning --import tsx --test shared/*.test.ts server/test/*.test.ts client/test/*.test.ts",
+    "test:e2e": "node --disable-warning=ExperimentalWarning scripts/e2e.mjs",
+    "test:e2e:demo": "node --disable-warning=ExperimentalWarning scripts/e2e-demo.mjs"
+  },
+  "dependencies": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "esbuild": "^0.28.0",
+    "playwright": "^1.56.0",
+    "sharp": "^0.35.0",
+    "tsx": "^4.20.0",
+    "typescript": "^6.0.0"
+  }
+}

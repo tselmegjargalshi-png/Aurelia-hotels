@@ -1,0 +1,192 @@
+[
+  {
+    "src": "48905.jpg",
+    "name": "winelands-estate-exterior",
+    "category": "exterior",
+    "status": "ok",
+    "width": 1079,
+    "height": 775,
+    "outputs": [
+      "winelands-estate-exterior-480.webp",
+      "winelands-estate-exterior-800.webp",
+      "winelands-estate-exterior-1080.webp",
+      "winelands-estate-exterior.jpg"
+    ]
+  },
+  {
+    "src": "48908.jpg",
+    "name": "suite-turquoise-bedroom",
+    "category": "suite",
+    "status": "ok",
+    "width": 918,
+    "height": 809,
+    "outputs": [
+      "suite-turquoise-bedroom-480.webp",
+      "suite-turquoise-bedroom-800.webp",
+      "suite-turquoise-bedroom-1080.webp",
+      "suite-turquoise-bedroom.jpg"
+    ]
+  },
+  {
+    "src": "48911.jpg",
+    "name": "lucerne-cliff-infinity-pool",
+    "category": "pool",
+    "status": "ok",
+    "width": 1079,
+    "height": 753,
+    "outputs": [
+      "lucerne-cliff-infinity-pool-480.webp",
+      "lucerne-cliff-infinity-pool-800.webp",
+      "lucerne-cliff-infinity-pool-1080.webp",
+      "lucerne-cliff-infinity-pool.jpg"
+    ]
+  },
+  {
+    "src": "48914.jpg",
+    "name": "restaurant-ornate-dining-room",
+    "category": "restaurant",
+    "status": "ok",
+    "width": 1079,
+    "height": 720,
+    "outputs": [
+      "restaurant-ornate-dining-room-480.webp",
+      "restaurant-ornate-dining-room-800.webp",
+      "restaurant-ornate-dining-room-1080.webp",
+      "restaurant-ornate-dining-room.jpg"
+    ]
+  },
+  {
+    "src": "48917.jpg",
+    "name": "room-valley-view-king",
+    "category": "room",
+    "status": "ok",
+    "width": 1079,
+    "height": 720,
+    "outputs": [
+      "room-valley-view-king-480.webp",
+      "room-valley-view-king-800.webp",
+      "room-valley-view-king-1080.webp",
+      "room-valley-view-king.jpg"
+    ]
+  },
+  {
+    "src": "48920.jpg",
+    "name": "dolomites-lodge-exterior",
+    "category": "exterior",
+    "redact": [
+      {
+        "left": 505,
+        "top": 455,
+        "width": 160,
+        "height": 75
+      },
+      {
+        "left": 800,
+        "top": 385,
+        "width": 125,
+        "height": 70
+      }
+    ],
+    "status": "ok",
+    "width": 1079,
+    "height": 720,
+    "outputs": [
+      "dolomites-lodge-exterior-480.webp",
+      "dolomites-lodge-exterior-800.webp",
+      "dolomites-lodge-exterior-1080.webp",
+      "dolomites-lodge-exterior.jpg"
+    ]
+  },
+  {
+    "src": "48923.jpg",
+    "name": "tyrol-infinity-pool-cabana",
+    "category": "pool",
+    "status": "ok",
+    "width": 1079,
+    "height": 722,
+    "outputs": [
+      "tyrol-infinity-pool-cabana-480.webp",
+      "tyrol-infinity-pool-cabana-800.webp",
+      "tyrol-infinity-pool-cabana-1080.webp",
+      "tyrol-infinity-pool-cabana.jpg"
+    ]
+  },
+  {
+    "src": "48926.jpg",
+    "name": "restaurant-classic-dining-room",
+    "category": "restaurant",
+    "status": "ok",
+    "width": 1079,
+    "height": 715,
+    "outputs": [
+      "restaurant-classic-dining-room-480.webp",
+      "restaurant-classic-dining-room-800.webp",
+      "restaurant-classic-dining-room-1080.webp",
+      "restaurant-classic-dining-room.jpg"
+    ]
+  },
+  {
+    "src": "48929.jpg",
+    "name": "room-loft-grey-headboard",
+    "category": "room",
+    "status": "ok",
+    "width": 1079,
+    "height": 664,
+    "outputs": [
+      "room-loft-grey-headboard-480.webp",
+      "room-loft-grey-headboard-800.webp",
+      "room-loft-grey-headboard-1080.webp",
+      "room-loft-grey-headboard.jpg"
+    ]
+  },
+  {
+    "src": "48932.jpg",
+    "name": "room-garden-glasshouse",
+    "category": "room",
+    "status": "ok",
+    "width": 1079,
+    "height": 720,
+    "outputs": [
+      "room-garden-glasshouse-480.webp",
+      "room-garden-glasshouse-800.webp",
+      "room-garden-glasshouse-1080.webp",
+      "room-garden-glasshouse.jpg"
+    ]
+  },
+  {
+    "src": "48935.jpg",
+    "name": "aosta-chalet-exterior",
+    "category": "exterior",
+    "redact": [
+      {
+        "left": 370,
+        "top": 548,
+        "width": 250,
+        "height": 50
+      }
+    ],
+    "status": "ok",
+    "width": 1079,
+    "height": 811,
+    "outputs": [
+      "aosta-chalet-exterior-480.webp",
+      "aosta-chalet-exterior-800.webp",
+      "aosta-chalet-exterior-1080.webp",
+      "aosta-chalet-exterior.jpg"
+    ]
+  },
+  {
+    "src": "48938.jpg",
+    "name": "kyushu-terrace-infinity-pool",
+    "category": "pool",
+    "status": "ok",
+    "width": 1079,
+    "height": 809,
+    "outputs": [
+      "kyushu-terrace-infinity-pool-480.webp",
+      "kyushu-terrace-infinity-pool-800.webp",
+      "kyushu-terrace-infinity-pool-1080.webp",
+      "kyushu-terrace-infinity-pool.jpg"
+    ]
+  }
+]

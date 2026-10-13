@@ -1,0 +1,20 @@
+E2E against http://127.0.0.1:4804
+  ✓ Home page loads with hero search
+  ✓ Date validation: check-out must be after check-in
+  ✓ Hotel search by destination and dates
+  ✓ Filters change the displayed results
+  ✓ Hotel detail: gallery modal opens and closes with keyboard
+  ✓ Availability: seeded sold-out suite cannot be selected; others can
+  ✓ Room selection → sign-in → checkout keeps the selection
+  ✓ Checkout: totals match the pricing engine; terms required
+  ✓ Reservation submission → confirmation from saved record
+  ✓ Booking persists in My Bookings and via API
+  ✓ Cancellation request from booking detail
+  ✓ Guest cannot access the admin dashboard (UI and API)
+  ✓ Admin dashboard: overview, cancellation approval
+  ✓ Contact form validation and honest success message
+  ✓ Mobile navigation menu works (390px)
+  ✓ No horizontal overflow at 390 / 768 / 1440 px
+  ✓ No uncaught page errors
+
+17/17 end-to-end checks passed

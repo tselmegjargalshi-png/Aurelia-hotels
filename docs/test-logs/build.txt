@@ -1,0 +1,9 @@
+
+  client/dist/assets/main.js       341.6kb
+  client/dist/assets/main.css       53.4kb
+  client/dist/assets/main.js.map     1.2mb
+  client/dist/assets/main.css.map  105.5kb
+
+⚡ Done in 78ms
+client/dist/assets/main.js  341.6 kB
+client/dist/assets/main.css  53.4 kB
