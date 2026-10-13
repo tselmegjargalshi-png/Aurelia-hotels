@@ -57,12 +57,12 @@ export function SignInPage() {
         <button className="btn btn-primary btn-block" disabled={busy}>{busy ? 'Signing in…' : 'Sign in'}</button>
       </form>
       <p className="auth-links"><Link to="/forgot-password">Forgot your password?</Link> · <Link to={withQuery('/register', { next: query.get('next') })}>Create an account</Link></p>
-      <div className="demo-credentials">
+      {!__DEMO__ && <div className="demo-credentials">
         <strong>Demo accounts</strong>
         <span>Guest: <code>guest@aurelia.demo</code> / <code>Aurelia-Guest-2026</code></span>
         <span>Admin: <code>admin@aurelia.demo</code> / <code>Aurelia-Admin-2026</code></span>
         <small>Demonstration credentials for local use only — change them via environment variables before any deployment.</small>
-      </div>
+      </div>}
     </AuthShell>
   );
 }
